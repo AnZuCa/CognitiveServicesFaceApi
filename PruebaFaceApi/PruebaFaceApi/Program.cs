@@ -36,7 +36,7 @@ namespace PruebaFaceApi
                 q.Headers.Add("Ocp-Apim-Subscription-Key", "42995da1c53e42288c2fcda472fc272a");
                 //Localización de la imagen
                 data2 = File.ReadAllBytes("C:\\Users\\hp\\Desktop\\Rostro2.jpg");
-                //Se envian los datos y se recive la respuesta
+                //Se envian los datos y se recibe la respuesta
                 resp2 = q.UploadData(url, data2);
                 //Decodificamos los datos en formato UTF8
                 String str2 = Encoding.UTF8.GetString(resp2);
